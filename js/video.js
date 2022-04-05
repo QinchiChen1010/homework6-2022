@@ -22,13 +22,13 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 //slower button
 document.querySelector("#slower").addEventListener("click", function() {
-	video.playbackRate *= 0.95;
+	video.playbackRate -= 0.05;
 	console.log("New Video speed is" + video.playbackRate);
 });
 
 //faster button
 document.querySelector("#faster").addEventListener("click", function() {
-	video.playbackRate *= 1.05;
+	video.playbackRate += 0.05;
 	console.log("New Video speed is" + video.playbackRate);
 });
 
